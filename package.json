@@ -1,6 +1,6 @@
 {
   "name": "cea-scripts",
-  "version": "0.2.1",
+  "version": "0.2.2",
   "src": "src/index.js",
   "main": "dist/index.js",
   "license": "MIT",
@@ -12,7 +12,7 @@
     "dev": "node src/index",
     "start": "node dist/index",
     "build": "rollup -c",
-    "publish": "npm publish --access public"
+    "publish:mamu": "npm publish --access public"
   },
   "dependencies": {
     "child_process": "^1.0.2",
