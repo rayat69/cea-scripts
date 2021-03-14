@@ -1,6 +1,6 @@
 {
   "name": "cea-scripts",
-  "version": "0.2.45",
+  "version": "0.2.5",
   "src": "src/index.js",
   "main": "dist/index.js",
   "license": "MIT",
