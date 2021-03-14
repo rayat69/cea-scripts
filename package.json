@@ -1,0 +1,26 @@
+{
+  "name": "cea-scripts",
+  "version": "0.1.0",
+  "src": "src/index.js",
+  "main": "dist/index.js",
+  "license": "MIT",
+  "preferGlobal": true,
+  "bin": {
+    "cea-scripts": "dist/index.js"
+  },
+  "scripts": {
+    "dev": "node src/index",
+    "start": "node dist/index",
+    "build": "rollup -c"
+  },
+  "dependencies": {
+    "child_process": "^1.0.2",
+    "commander": "^7.1.0",
+    "cross-spawn": "^7.0.3",
+    "inquirer": "^8.0.0"
+  },
+  "devDependencies": {
+    "@rollup/plugin-commonjs": "^17.1.0",
+    "@rollup/plugin-node-resolve": "^11.2.0"
+  }
+}
