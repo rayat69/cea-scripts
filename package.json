@@ -1,6 +1,6 @@
 {
   "name": "cea-scripts",
-  "version": "0.2.3",
+  "version": "0.2.4",
   "src": "src/index.js",
   "main": "dist/index.js",
   "license": "MIT",
@@ -22,12 +22,13 @@
     "inquirer": "^8.0.0",
     "@rollup/plugin-commonjs": "^17.1.0",
     "@rollup/plugin-json": "^4.1.0",
-    "@rollup/plugin-node-resolve": "^11.2.0",
-    "rollup-plugin-gzip": "^2.5.0",
-    "rollup-plugin-node-polyfills": "^0.2.1",
     "rollup-plugin-typescript2": "^0.30.0",
     "rollup-plugin-uglify": "^6.0.4",
     "typescript": "^4.2.3"
   },
-  "devDependencies": {}
+  "devDependencies": {
+    "@rollup/plugin-node-resolve": "^11.2.0",
+    "rollup-plugin-gzip": "^2.5.0",
+    "rollup-plugin-node-polyfills": "^0.2.1"
+  }
 }
