@@ -4,6 +4,7 @@ import commonjs from "@rollup/plugin-commonjs";
 import Json from "@rollup/plugin-json";
 import { uglify } from "rollup-plugin-uglify";
 import gzipPlugin from "rollup-plugin-gzip";
+import nodePolyfills from "rollup-plugin-node-polyfills";
 
 export default {
   input: src,
@@ -14,5 +15,11 @@ export default {
     compact: true,
     minifyInternalExports: true,
   },
-  plugins: [gzipPlugin(), nodeResolve(), commonjs(), Json(), uglify()],
+  plugins: [
+    gzipPlugin(),
+    commonjs(),
+    Json(),
+    uglify(),
+  ],
+  // plugins: [gzipPlugin(), nodeResolve(), commonjs(), Json(), uglify()],
 };
